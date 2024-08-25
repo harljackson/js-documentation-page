@@ -1,0 +1,486 @@
+<!-- meta info -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css\styles.css">
+  <title>JavaScript Documentation Page</title>
+</head>
+
+<!-- main -->
+<main id="main-doc">
+
+  <!-- introduction -->
+  <section class="main-section" id="Introduction_To_JavaScript">
+    <header>Introduction To JavaScript</header>
+      
+
+
+      <!-- nav -->
+      <nav id="navbar">
+        <header>Navigation</header>
+
+        
+        <!-- introduction to js -->
+        <ul>
+          <li><a class="nav-link" href="#Introduction_To_JavaScript">Introduction To JavaScript</a></li> 
+          
+          
+          
+         <!-- learning tips -->
+         <li><a class="nav-link" href="#Top_Secret_Learning_Tips">Top Secret Learning Tips</a></li> 
+
+          
+          
+          <!-- variables -->
+          <li><a class="nav-link" href="#Variables">Variables</a></li> 
+
+
+          
+          <!-- data types -->
+          <li><a class="nav-link" href="#Data_Types">Data Types</a></li> 
+
+          
+          
+          <!-- operators -->
+          <li><a class="nav-link" href="#Operators">Operators</a></li> 
+
+
+         
+         <!-- functions -->
+         <li><a class="nav-link" href="#Functions">Functions</a></li> 
+
+
+        
+        
+        <!-- events -->
+        <li><a class="nav-link" href="#Events">Events</a></li> 
+
+
+        
+        
+        <!-- loops -->
+        <li><a class="nav-link" href="#Loops">Loops</a></li> 
+
+      </nav>
+    </header>
+
+    <article id="intro">
+
+      <!-- js intro one -->
+      <p id="js-intro-one">JavaScript is a powerful and versatile programming language that plays a crucial role in modern web development, bringing web pages to life by adding interactivity, dynamic content, and advanced functionality. Whether it's creating responsive user interfaces, handling events, or manipulating the Document Object Model (DOM), JavaScript enables developers to craft engaging and interactive experiences for users.
+      </p>
+
+      <!-- js intro two -->
+      <p id="js-intro-two">This documentation serves as a complete guide, offering a comprehensive overview of core JavaScript concepts, essential syntax, and best practices to help you write clean, efficient, and maintainable code. Whether you're just getting started or looking to deepen your understanding, this resource will provide you with the knowledge and tools needed to harness the full potential of JavaScript in your web projects.
+      </p>
+
+    </article>
+  </section>
+
+  <!-- top tips -->
+  <section class="main-section" id="Top_Secret_Learning_Tips">
+    <header>Top Secret Learning Tips</header>
+    <article id="tips-section">
+
+      <!-- top tips 1 -->
+      <ol id="tips-list">
+
+        <!-- tip one -->
+        <strong><li>Practice Regularly:</strong>
+          The best way to learn JavaScript is by practicing regularly. Try building small projects or solving coding challenges to solidify your understanding.
+        </li>
+
+        <!-- tip two -->
+        <strong><li>Start with the Basics:</strong>
+          Begin by mastering fundamental concepts like variables, data types, operators, and control flow. A strong foundation will make it easier to learn more advanced topics.
+        </li>
+
+        <!-- tip three -->
+        <strong><li>Break Down Problems:</strong>
+          When faced with a complex problem, break it down into smaller, more manageable steps. This will help you approach the problem systematically and avoid feeling overwhelmed.
+        </li>
+
+        <!-- tip four -->
+        <strong><li>Understand the DOM:</strong>
+          The Document Object Model (DOM) is a fundamental concept in JavaScript. Learn how to manipulate and interact with HTML elements using the DOM.
+        </li>
+
+        <!-- tip five -->
+        <strong><li>Practice Good Coding Practices:</strong>
+          Follow coding conventions and best practices to write clean, maintainable code. This includes using meaningful variable names, consistent formatting, and comments to explain your code.
+        </li>
+
+      </ol>
+
+    </article>
+  </section>
+
+  <!-- variables section -->
+  <section class="main-section" id="Variables">
+    <header>Variables</header>
+    <article id="variables-section">
+
+      <h3>Declaring Variables</h3>
+
+      <!-- overview of variables -->
+      <p id="dec-variables-p-one">In JavaScript, variables are essential for storing and managing data. You can declare variables using the var, let, or const keywords, each serving different purposes based on their scope and behavior:
+      </p>
+
+      <!-- var -->
+      <p id="dec-variables-p-two"><strong>var:</strong>
+        The var keyword is used to declare variables with function or global scope, depending on where it is declared. Variables declared with var can be redeclared within the same block, which can sometimes lead to unexpected behavior.
+      </p>
+
+      <!-- var code section -->
+      <code id="var-code">
+        var exampleVar = "I can be declared more than once...";
+      </code>
+
+      <!-- let -->
+      <p id="dec-variables-p-three"><strong>let:</strong>
+        The let keyword is used to declare variables with block scope, meaning the variable is only accessible within the block where it is declared (e.g., within a {}). Unlike var, let variables cannot be redeclared within the same block, providing more predictable behavior in code.
+      </p>
+
+      <!-- let code section -->
+      <code id="let-code">
+        let exampleLet = "I cannot be redeclared in the same block!";
+      </code>
+
+      <!-- const variable -->
+      <p id="dec-variables-p-four"><strong>const:</strong>
+        The const keyword is used to declare constants, which are variables that cannot be reassigned after they are initialized. Like let, const has block scope. It’s ideal for values that should not change throughout the execution of your program.
+      </p>
+
+      <!-- constant var code -->
+      <code id="constant-var-code">
+        const exampleConst = "I'm a constant and cannot be reassigned!";
+      </code>
+
+    </article>
+  </section>
+
+  <!-- data types section -->
+  <section class="main-section" id="Data_Types">
+    <header>Data Types</header>
+    <article id="data-types-section">
+
+      <h3>Which Data Types Does JS Support?</h3>
+      <p id="data-types-intro">JavaScript supports various data types, each serving a different purpose in programming. Understanding these data types is essential for managing and manipulating data effectively:
+      </p>
+
+      <!-- number types p -->
+      <p id="number-types-p"><strong>Numbers:</strong>
+        JavaScript handles both integers and floating-point numbers under the same Number data type. They are used to perform mathematical operations and represent numeric values.
+      </p>
+
+      <code>
+        let integer = 42;
+        let float = 3.14;
+      </code>
+
+      <!-- strings p -->
+      <p id="strings-p"><strong>Strings:</strong>
+        Strings are sequences of characters enclosed in single (' '), double (" "), or backticks ( ). They are used to represent text.
+      </p>
+
+      <code id="strings-code">
+        let hello = "Hello, World!";
+      </code>
+
+      <!-- boolean p -->
+      <p id="boolean-p"><strong>Booleans:</strong>
+        The Boolean data type has only two possible values: true or false. Booleans are often used in conditional statements to control the flow of a program.
+      </p>
+
+      <code id="boolean-code">
+        let javaScriptIsFun = true;
+      </code>
+
+      <!-- objects p -->
+      <p id="objects-p"><strong>Objects:</strong>
+        Objects are collections of key-value pairs, where each key is associated with a value. They are used to store more complex data and represent entities with properties.
+      </p>
+
+      <code id="objects-code">
+        let person = {
+          name: "Harley",
+          age: 23,
+          isStudent: true
+        };
+      </code>
+
+      <!-- arrays p -->
+      <p id="arrays-p"><strong>Arrays:</strong>
+        Arrays are ordered collections of values, which can be of any data type. Arrays are useful for storing lists of items.
+      </p>
+
+      <code id="arrays-code">
+        let ukCities = ["manchester", "liverpool", "birmingham"];
+      </code>
+
+      <!-- null p -->
+      <p id="null-p"><strong>Null:</strong>
+        The null value represents an intentional absence of any object value. It is often used to signify that a variable should be empty.
+      </p>
+
+      <code id="null-code">
+        let anEmptyValue = null;
+      </code>
+
+      <!-- undefined p -->
+      <p id="undefined-p"><strong>Undefined:</strong>
+        Undefined indicates that a variable has been declared but has not yet been assigned a value. It is the default value for uninitialized variables.
+      </p>
+
+      <code id="undefined-code">
+        let notYetAssigned;
+      </code>
+
+    </article>
+  </section>
+
+  <!-- operators section -->
+  <section class="main-section" id="Operators">
+    <header>Operators</header>
+    <article id="operators-section">
+
+      <h3>Which Operators Can I Use?</h3>
+      <p id="operators-intro">JavaScript offers a variety of operators that allow you to perform different types of operations on variables and values. These operators are fundamental to writing efficient and functional code.
+      </p>
+
+      <!-- arithmetic operators -->
+      <h3>Arithmetic Operators</h3>
+      <p id="arithmetic-op-intro">Arithmetic operators are used to perform mathematical operations on numbers.</p>
+
+      <!-- addition -->
+      <p id="addition-p"><strong>+ </strong>: Addition</p>
+
+      <code id="addition-code">
+        let sum = 9 + 10; // Result: 19
+      </code>
+
+      <!-- subtraction -->
+      <p id="subtraction-p"><strong>- </strong>: Subtraction</p>
+
+      <code id="subtraction-code">
+        let differenceBetween = 20 - 14; // Result: 6
+      </code>
+
+      <!-- multiplication -->
+      <p id="multiply-p"><strong>* </strong>: Multiplication</p>
+
+      <code id="multiply-code">
+        let product = 3 * 6; // Result: 18
+      </code>
+
+      <!-- division -->
+      <p id="division-p"><strong>/ </strong>: Division</p>
+
+      <code id="division-code">
+        let quotient = 20 / 5; // Result: 4
+      </code>
+
+      <!-- remainder -->
+      <p id="remainder-p"><strong>% </strong>: Remainder</p>
+
+      <code id="remainder-code">
+        let remainder = 25 % 7; // Result: 4
+      </code>
+
+      <!-- concatenation -->
+      <h3>Concatenation Operators</h3>
+      <p id="concat-op-intro">Concatenation operators are used to merge or combine strings.</p>
+
+      <p id="concat-op"><strong>+ </strong>: Concatenation</p>
+
+      <code id="concatenation-code">
+        let greeting = "Hello" + " " + "World"; // Result: "Hello World"
+      </code>
+
+      <!-- assignment -->
+      <h3>Assignment Operators</h3>
+      <p id="assign-op-intro">Assignment operators are used to assign values to variables.</p>
+
+      <p id="assign-op"><strong>= </strong>: Assignment</p>
+
+      <code id="assignment-code">
+        let a = 10; // Assigns the value 10 to variable a
+      </code>
+
+      <!-- comparison -->
+      <h3>Comparison Operators</h3>
+      <p id="compare-op-intro">Comparison operators are used to compare two values. They return a Boolean value (true or false).</p>
+
+      <p id="equal-op"><strong>== </strong>: Equal to</p>
+
+      <code id="equal-to-code">
+        let equalCheck = 5 == "5"; // Result: true
+      </code>
+
+      <!-- not equal -->
+      <p id="not-equal-op"><strong>!= </strong>: Not equal to</p>
+
+      <code id="not-equal-code">
+        let notEqualCheck = 5 != 3; // Result: true
+      </code>
+
+      <!-- greater than -->
+      <p id="greater-than-op"><strong>&gt; </strong>: Greater than</p>
+
+      <code id="greater-than-code">
+        let greaterCheck = 8 > 6; // Result: true
+      </code>
+
+      <!-- less than -->
+      <p id="less-than-op"><strong>&lt; </strong>: Less than</p>
+
+      <code id="less-than-code">
+        let lessCheck = 3 < 7; // Result: true
+      </code>
+
+      <!-- greater or equal -->
+      <p id="greater-equal-op"><strong>&gt;= </strong>: Greater than or equal to</p>
+
+      <code id="greater-equal-code">
+        let greaterEqualCheck = 10 >= 10; // Result: true
+      </code>
+
+      <!-- less or equal -->
+      <p id="less-equal-op"><strong>&lt;= </strong>: Less than or equal to</p>
+
+      <code id="less-equal-code">
+        let lessEqualCheck = 8 <= 9; // Result: true
+      </code>
+
+    </article>
+  </section>
+
+  <!-- functions section -->
+  <section class="main-section" id="Functions">
+    <header>Functions</header>
+    <article id="functions-section">
+
+      <h3>What Is A Function?</h3>
+      <p id="functions-intro">Functions in JavaScript are reusable blocks of code that perform specific tasks. They help make your code modular and easier to manage. Functions can accept input parameters and return an output value. Here's how to declare a simple function:
+      </p>
+
+      <code id="functions-code">
+        function greet(name) {
+          return "Hello, " + name + "!";
+        }
+      </code>
+
+      <!-- calling a function -->
+      <p id="calling-functions">You can call or invoke the function with an argument:</p>
+
+      <code id="calling-functions-code">
+        let message = greet("World"); // Result: "Hello, World!"
+      </code>
+
+      <!-- parameters -->
+      <p id="parameters-intro">Functions can take multiple parameters:</p>
+
+      <code id="parameters-code">
+        function addNumbers(a, b) {
+          return a + b;
+        }
+
+        let result = addNumbers(5, 7); // Result: 12
+      </code>
+
+    </article>
+  </section>
+
+  <!-- events section -->
+  <section class="main-section" id="Events">
+    <header>Events</header>
+    <article id="events-section">
+
+      <h3>What Are Events?</h3>
+      <p id="events-intro">Events in JavaScript are actions or occurrences that happen in the web browser, such as a user clicking a button, a web page loading, or a keyboard key being pressed. JavaScript allows you to react to these events and execute code in response.
+      </p>
+
+      <!-- event listener -->
+      <h3>Adding an Event Listener</h3>
+      <p id="event-listener-intro">You can use the addEventListener method to attach an event handler to an element. Here's an example of adding a click event listener to a button:</p>
+
+      <code id="event-listener-code">
+        let button = document.getElementById("myButton");
+
+        button.addEventListener("click", function() {
+          alert("Button was clicked!");
+        });
+      </code>
+
+      <!-- event object -->
+      <h3>The Event Object</h3>
+      <p id="event-object-intro">When an event occurs, an event object is automatically passed to the event handler function. This object contains useful information about the event, such as the element that triggered it and the type of event that occurred.</p>
+
+      <code id="event-code">
+        button.addEventListener("click", function(event) {
+          console.log("Clicked element:", event.target);
+        });
+      </code>
+
+    </article>
+  </section>
+
+  <!-- loops section -->
+  <section class="main-section" id="Loops">
+    <header>Loops</header>
+    <article id="loops-section">
+
+      <h3>What Are Loops?</h3>
+      <p id="loops-intro">Loops are a fundamental concept in programming that allow you to execute a block of code repeatedly, based on a condition. JavaScript provides several types of loops, each serving a different purpose:
+      </p>
+
+      <!-- for loop -->
+      <h3>The For Loop</h3>
+      <p id="for-loop-intro">The for loop is commonly used to repeat a block of code a specific number of times. Here's a basic example:</p>
+
+      <code id="for-code">
+        for (let i = 0; i < 5; i++) {
+          console.log("Iteration:", i);
+        }
+      </code>
+
+      <!-- while loop -->
+      <h3>The While Loop</h3>
+      <p id="while-loop-intro">The while loop continues to execute a block of code as long as a specified condition is true:</p>
+
+      <code id="while-code">
+        let i = 0;
+
+        while (i < 5) {
+          console.log("Iteration:", i);
+          i++;
+        }
+      </code>
+
+      <!-- do while loop -->
+      <h3>The Do While Loop</h3>
+      <p id="do-while-loop-intro">The do-while loop is similar to the while loop, but it guarantees that the code block will be executed at least once, even if the condition is false:</p>
+
+      <code id="do-while-code">
+        let i = 0;
+
+        do {
+          console.log("Iteration:", i);
+          i++;
+        } while (i < 5);
+      </code>
+
+    </article>
+  </section>
+
+</main>
+
+<!-- footer -->
+<footer>
+  <p id="footer-text">For more information about JavaScript visit <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN web docs</p>
+</footer>
+</html>
